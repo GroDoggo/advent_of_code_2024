@@ -8,7 +8,7 @@
 #include <functional>
 
 #include "Day.h"
-#include "Day1.h"
+#include "Day0.h"
 
 #define INPUTS_FOLDER_PATH "../inputs/"
 
