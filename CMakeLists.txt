@@ -7,6 +7,7 @@ file(GLOB PROJECT_CPP_FILES
 file(GLOB PROJECT_INCLUDE_FILES
     "Day.h"
     "Day0.h"
+    "Day1.h"
 )
 
 add_executable( ADVENT_OF_CODE_2024

@@ -9,6 +9,7 @@
 
 #include "Day.h"
 #include "Day0.h"
+#include "Day1.h"
 
 #define INPUTS_FOLDER_PATH "../inputs/"
 
@@ -37,6 +38,7 @@ private:
 public:
     DayManager() {
         dayRegistry[0] = [](const std::vector<std::string>& input) { return std::make_unique<Day0>(input); };
+        dayRegistry[1] = [](const std::vector<std::string>& input) { return std::make_unique<Day1>(input); };
         // Ajouter d'autres jours ici
     }
 
