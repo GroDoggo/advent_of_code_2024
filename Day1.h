@@ -60,6 +60,21 @@ public:
     }
 
     void execPart2() override {
-        std::cout << "Partie 1 - Nombre de lignes : " << input.size() << std::endl;    
+        std::cout << "Partie 2 - Nombre de lignes : " << input.size() << std::endl;
+
+        auto cut = cut_input(input);
+        std::vector<int> first_col = cut.first;
+        std::vector<int> second_col = cut.second;
+
+        std::size_t score = 0;
+        std::for_each(first_col.begin(), first_col.end(), [&second_col, &score](auto &v) {
+            std::size_t mul = 0;
+            std::for_each(second_col.begin(), second_col.end(), [&mul, &v](auto &v2) {
+                if (v == v2) mul++;
+            });
+            score += mul * v;
+        });
+
+        std::cout << "RESULT --> " << score << std::endl;
     }
 };
