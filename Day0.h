@@ -4,7 +4,7 @@
 
 class Day0 : public Day {
 public:
-    explicit Day0(const std::vector<std::string>& inputData) : Day(inputData, "Day0 - Test"){}
+    explicit Day0(const std::vector<std::string>& inputData) : Day(inputData, "Day 0 - Test"){}
 
     void execPart1() override {
         std::cout << "Partie 1 - Nombre de lignes : " << input.size() << std::endl;
