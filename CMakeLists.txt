@@ -8,6 +8,8 @@ file(GLOB PROJECT_INCLUDE_FILES
     "Day.h"
     "Day0.h"
     "Day1.h"
+    "Day2.h"
+    "Day3.h"
 )
 
 add_executable( ADVENT_OF_CODE_2024

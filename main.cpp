@@ -11,6 +11,7 @@
 #include "Day0.h"
 #include "Day1.h"
 #include "Day2.h"
+#include "Day3.h"
 
 #define INPUTS_FOLDER_PATH "../inputs/"
 
@@ -41,6 +42,7 @@ public:
         dayRegistry[0] = [](const std::vector<std::string>& input) { return std::make_unique<Day0>(input); };
         dayRegistry[1] = [](const std::vector<std::string>& input) { return std::make_unique<Day1>(input); };
         dayRegistry[2] = [](const std::vector<std::string>& input) { return std::make_unique<Day2>(input); };
+        dayRegistry[3] = [](const std::vector<std::string>& input) { return std::make_unique<Day3>(input); };
         // Ajouter d'autres jours ici
     }
 
